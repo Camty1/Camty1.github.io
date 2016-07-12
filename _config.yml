@@ -2,6 +2,7 @@
 
 markdown: kramdown
 permalink: pretty
+baseurl: /Camty1.github.io
 
 port: 3000
 
