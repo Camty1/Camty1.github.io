@@ -1,11 +1,8 @@
-# Build settings
-
 markdown: kramdown
 permalink: pretty
-baseurl: /Camty1.github.io
 
 port: 3000
 
 sass:
-  sass_dir: assets/css
+  sass_dir: /assets/css
   style: :nested
