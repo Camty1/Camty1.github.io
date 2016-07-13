@@ -149,7 +149,7 @@ td, th {
   src: local("Open Sans"), local("OpenSans"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #bd5248;
+  color: #BD5248;
   font-weight: bold; }
 
 .gigantic {
@@ -188,14 +188,14 @@ strong {
   font-weight: bold; }
 
 hr {
-  border: solid #dddddd;
+  border: solid #ddd;
   border-width: 1px 0 0;
   clear: both;
   margin: 10px 0 30px;
   height: 0; }
 
 a {
-  color: #bd5248;
+  color: #BD5248;
   text-decoration: none;
   outline: 0; }
 
@@ -203,10 +203,10 @@ a:hover, a:focus {
   color: #d89993; }
 
 ::selection {
-  background: #fff498; }
+  background: #FFF498; }
 
 ::-moz-selection {
-  background: #fff498; }
+  background: #FFF498; }
 
 img::selection {
   background: transparent; }
@@ -215,13 +215,105 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #fff498; }
+  -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: #f6f6f8;
+  background: #F6F6F8;
   font-size: 14px;
   line-height: 1.6;
   font-family: "Open Sans" sans-serif;
-  color: #2e2d33;
+  color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+header {
+  background: url("/assets/img/hero-bg.jpg") center center;
+  background-size: cover;
+  color: #fff;
+  font-family: "Open Sans";
+  box-shadow: 0px 3px 3px #888;
+  height: 600px;
+  z-index: 0; }
+  header .logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    fill: rgba(0, 0, 0, 0.4); }
+  header nav {
+    float: right;
+    margin-right: 30px;
+    margin-top: 25px; }
+    header nav a {
+      color: rgba(0, 0, 0, 0.7);
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 20px;
+      display: inline-block; }
+      header nav a:hover {
+        color: black; }
+  header h1 {
+    margin-top: 0px;
+    padding: 100px 0 0;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    clear: both; }
+    header h1 span {
+      border-bottom: 12px solid #fff; }
+      @media screen and (max-width: 860px) {
+        header h1 span {
+          border-bottom: 0; } }
+  header p {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white; }
+    header p span {
+      font-weight: 700; }
+
+.about {
+  text-align: center;
+  box-shadow: 0 4px 4px #888;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 0;
+  position: relative; }
+  .about:before {
+    width: 100%;
+    height: 2px;
+    background-color: #fff; }
+  .about .portrait {
+    height: 150px;
+    width: 150px;
+    margin: 50px auto 0px;
+    background: url("/assets/img/portrait-img.jpg");
+    border-radius: 50%;
+    box-shadow: 0 2px 5px #555; }
+  .about .about-text {
+    max-width: 720px;
+    margin: 0px auto; }
+    .about .about-text h3 {
+      color: rgba(0, 0, 0, 0.7);
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700; }
+    .about .about-text p {
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      line-height: 2em;
+      padding-bottom: 50px;
+      color: rgba(0, 0, 0, 0.7); }
+
+.services {
+  background: #bfbfbf;
+  height: 450px;
+  position: relative;
+  top: -16px;
+  z-index: 0; }

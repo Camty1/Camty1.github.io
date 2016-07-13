@@ -3,17 +3,17 @@ header
     background-size: cover
     color: #fff
     font-family: "Open Sans"
-    box-shadow: 0px 2px 5px #555
-    height: 450px
+    box-shadow: 0px 3px 3px #888
+    height: 600px
+    z-index: 0
     
     .logo
         +size(50px)
         float: left
         margin-left: 30px
         margin-top: 10px
+        fill: rgba(0,0,0,0.4)
         
-        svg
-            fill: rgba(0,0,0,0.7)
     nav
         float: right
         margin-right: 30px
@@ -42,10 +42,13 @@ header
         
         span
             border-bottom: 12px solid #fff
+            @media screen and (max-width: 860px)
+                border-bottom: 0
     p
         font-size: 14px
         text-align: center
         text-transform: uppercase
+        color: white
         
         span
             font-weight: 700
