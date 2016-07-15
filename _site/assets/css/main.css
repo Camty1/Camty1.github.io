@@ -228,7 +228,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 html {
-  width: 100%; }
+  width: device-width; }
 
 header {
   background: url("/assets/img/hero-bg.jpg") center center;
