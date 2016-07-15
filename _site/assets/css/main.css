@@ -218,13 +218,17 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: #F6F6F8;
+  background: white;
   font-size: 14px;
+  width: 100%;
   line-height: 1.6;
   font-family: "Open Sans" sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+html {
+  width: 100%; }
 
 header {
   background: url("/assets/img/hero-bg.jpg") center center;
@@ -233,7 +237,8 @@ header {
   font-family: "Open Sans";
   box-shadow: 0px 3px 3px #555;
   height: 600px;
-  z-index: 1; }
+  z-index: 3;
+  width: 100%; }
   header .logo {
     height: 50px;
     width: 50px;
@@ -266,9 +271,6 @@ header {
     clear: both; }
     header h1 span {
       border-bottom: 12px solid #fff; }
-      @media screen and (max-width: 895px) {
-        header h1 span {
-          border-bottom: 0; } }
   header p {
     font-size: 16px;
     text-align: center;
@@ -282,8 +284,10 @@ header {
   box-shadow: 0 4px 4px #888;
   margin-top: 0;
   margin-bottom: 0;
-  z-index: 0;
-  position: relative; }
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  background-color: #fff; }
   .about .portrait {
     height: 150px;
     width: 150px;
@@ -310,21 +314,57 @@ header {
 
 .services {
   background: #bfbfbf;
-  height: 450px;
   position: relative;
-  top: -20px;
-  z-index: -1;
-  box-shadow: 0 4px 4px #333; }
+  height: 450px;
+  top: -35px;
+  z-index: 1;
+  box-shadow: 0 4px 4px #555;
+  width: 100%; }
+  @media screen and (max-width: 700px) {
+    .services {
+      height: 700px; } }
+
+.services-wrapper h2 {
+  padding-top: 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-weight: 700; }
+.services-wrapper .service {
+  float: left;
+  width: 50%;
+  text-align: center; }
+  @media screen and (max-width: 700px) {
+    .services-wrapper .service {
+      width: 100%; } }
+  .services-wrapper .service h3 {
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    font-weight: 400; }
+  .services-wrapper .service .web-design-logo {
+    height: 150px;
+    width: 150px;
+    background: url("/assets/img/web-design.jpg") center center;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px #333; }
+  .services-wrapper .service .UX-logo {
+    height: 150px;
+    width: 150px;
+    background: url("/assets/img/ux-design.jpg") center center;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px #333; }
 
 footer {
-  top: -20px;
   height: 100px;
-  background: url("/assets/img/hero-bg.jpg") center center;
+  background: white;
   background-size: cover;
   position: relative;
-  z-index: -3; }
-  footer .footer-container {
-    padding-top: 10px; }
+  width: 100%;
+  z-index: 0; }
   footer .logo {
     height: 50px;
     width: 50px;
@@ -333,7 +373,7 @@ footer {
     margin-top: 10px;
     fill: rgba(0, 0, 0, 0.7); }
   footer .footer-lockup {
-    max-width: 350px; }
+    max-width: 500px; }
     footer .footer-lockup a {
       color: rgba(0, 0, 0, 0.8);
       text-transform: uppercase;

@@ -1,7 +1,49 @@
 .services
     background: #bfbfbf
-    height: 450px
     position: relative
-    top: -20px
-    z-index: -1
-    box-shadow: 0 4px 4px #333
+    height: 450px
+    top: -35px
+    z-index: 1
+    box-shadow: 0 4px 4px #555
+    width: 100%
+    @media screen and (max-width: 700px)
+        height: 700px
+    
+.services-wrapper
+    
+    h2
+        padding-top: 50px
+        text-align: center
+        color: rgba(0, 0, 0, 0.7)
+        text-transform: uppercase
+        font-weight: 700
+        
+    .service
+        float: left
+        width: 50%
+        text-align: center
+        @media screen and (max-width: 700px)
+            width: 100%    
+        
+        h3
+            color: rgba(0,0,0,0.7)
+            text-transform: uppercase
+            font-weight: 400
+            
+        .web-design-logo
+            height: 150px
+            width: 150px
+            background: url("/assets/img/web-design.jpg") center center
+            border-radius: 50%
+            background-size: cover
+            margin: 0 auto
+            box-shadow: 0 2px 5px #333
+            
+        .UX-logo
+            height: 150px
+            width: 150px
+            background: url("/assets/img/ux-design.jpg") center center
+            border-radius: 50%
+            background-size: cover
+            margin: 0 auto
+            box-shadow: 0 2px 5px #333 
