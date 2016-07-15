@@ -219,6 +219,7 @@ body {
 
 body {
   background: white;
+  margin: auto;
   font-size: 14px;
   width: 100%;
   line-height: 1.6;
@@ -228,7 +229,8 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 html {
-  width: device-width; }
+  width: device-width;
+  margin: auto; }
 
 header {
   background: url("/assets/img/hero-bg.jpg") center center;
