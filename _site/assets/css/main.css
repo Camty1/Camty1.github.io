@@ -314,6 +314,20 @@ header {
       padding-bottom: 50px;
       color: rgba(0, 0, 0, 0.7); }
 
+@media screen and (max-width: 700px) {
+  
+    
+  .services-wrapper .service {
+    
+      width: 100%; 
+    
+    }
+
+    .services {
+        height: 700px;
+    }
+}
+
 .services {
   background: #bfbfbf;
   position: relative;
