@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
@@ -42,10 +43,25 @@
             </svg>
         </div>
         <nav class="header-nav">
-            <a href="#about">About Me</a>
-            <a href="#services">Services</a>
-            <a href="">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="index.html/#about">About Me</a>
+            <a href="index.html/#services">Services</a>
         </nav>
+        </div>
+        
+        
+        <div class="contact-form">
+            <form action="https://formspree.io/cwolfe@vms.edu"
+          method="POST">
+                <label><span>Your Name</span>
+                    <input type="text" name="name"></label>
+                <label><span>Your Email</span>
+                    <input type="email" name="_replyto"></label>
+                <label><span>Tell me about your dream website</span>
+                    <textarea name="message"></textarea></label>
+
+                <input type="submit" value="Send">
+            </form>
         </div>
         
     </div>
