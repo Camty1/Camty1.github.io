@@ -55,9 +55,9 @@ body {
 
 .contact-form {
     max-width: 880px;
-    margin: 0 auto 100px;
+    margin: 0 auto 150px;
     font-family: 'Open Sans';
-    padding: 0 20px;
+    padding: 0 20px 5px;
 }
 
 label {
@@ -79,6 +79,7 @@ label span {
 footer{
     position: fixed;
     bottom: 0px;
+    margin-top: 120px;
 }
 
 h3{
